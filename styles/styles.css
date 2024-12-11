@@ -1,0 +1,107 @@
+/* Reset básico */
+body, h1, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo del cuerpo */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Encabezado principal */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logo */
+  .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Barra de navegación */
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Opciones de usuario */
+  .user-options .login-btn {
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #ffcc00;
+    color: #0066cc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .user-options .login-btn:hover {
+    background-color: #0066cc;
+    color: #ffcc00;
+  }
+  
+  #card-container {
+    display: grid; /* Habilitar diseño en cuadrícula */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Mínimo 200px por columna */
+    gap: 1rem; /* Espaciado entre las tarjetas */
+    padding: 1rem;
+    width: 100%; /* Asegurarte de que el contenedor ocupe todo el espacio */
+  }
+  
+  .notification {
+    position: fixed;
+    top: 10%;
+    right: 40%;
+    background-color: #28a745; /* Color de fondo verde */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    animation: fade-in-out 4s ease-in-out;
+    z-index: 1000;
+  }
+  
+  @keyframes fade-in-out {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    90% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  }
+  
